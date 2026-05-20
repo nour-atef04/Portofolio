@@ -11,6 +11,13 @@ export default {
         divider: "var(--border)",
         code: "var(--code-bg)",
         social: "var(--social-bg)",
+        code: {
+          white: "var(--white)",
+          pink: "var(--pink)",
+          blue: "var(--blue)",
+          purple: "var(--purple)",
+          green: "var(--green)",
+        },
         accent: {
           DEFAULT: "var(--accent)",
           bg: "var(--accent-bg)",

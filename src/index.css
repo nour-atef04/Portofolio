@@ -12,6 +12,11 @@
   --accent: #aa9ce2;
   --accent-bg: rgba(192, 132, 252, 0.15);
   --accent-border: rgba(192, 132, 252, 0.5);
+  --white: #f6f4f2;
+  --pink: #c27aae;
+  --purple: #aa9ce2;
+  --blue: #8cedfa;
+  --green: #67b27a;
   --social-bg: rgba(47, 48, 58, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
