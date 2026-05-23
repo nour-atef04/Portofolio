@@ -10,7 +10,6 @@ const Projects = [
     externalLink: "https://paperless-eta.vercel.app/notes",
     tags: ["Next.js", "TypeScript", "Supabase (PostgreSQL)", "Tailwind CSS"],
     images: [
-      "paperless-1.png",
       "paperless-2.png",
       "paperless-3.png",
       "paperless-4.png",
@@ -21,6 +20,7 @@ const Projects = [
       "paperless-9.png",
       "paperless-10.png",
       "paperless-11.png",
+      "paperless-1.png",
     ],
   },
   {
@@ -31,7 +31,6 @@ const Projects = [
     externalLink: "https://career-hive-connect.vercel.app/",
     tags: ["React.js", "Supabase (PostgreSQL)", "TanStack Query"],
     images: [
-      "careerhive-1.png",
       "careerhive-2.png",
       "careerhive-3.png",
       "careerhive-4.png",
@@ -40,6 +39,7 @@ const Projects = [
       "careerhive-7.png",
       "careerhive-8.png",
       "careerhive-9.png",
+      "careerhive-1.png",
     ],
   },
   {
@@ -55,6 +55,17 @@ const Projects = [
       "Python",
       "Docker",
     ],
+    images: [
+      "foodmart-5.png",
+      "foodmart-6.png",
+      "foodmart-7.png",
+      "foodmart-8.png",
+      "foodmart-9.png",
+      "foodmart-1.png",
+      "foodmart-3.png",
+      "foodmart-2.png",
+      "foodmart-4.png",
+    ],
   },
   {
     title: "Car Rental System",
@@ -62,6 +73,17 @@ const Projects = [
       "A car rental system with date-based booking and an admin dashboard to manage vehicle availability and rentals.",
     githubLink: "https://github.com/nour-atef04/CarRentalSystem",
     tags: ["React.js", "Node.js", "Express.js", "MySQL"],
+    images: [
+      "car-4.png",
+      "car-5.png",
+      "car-6.png",
+      "car-7.png",
+      "car-8.png",
+      "car-1.png",
+      "car-9.png",
+      "car-2.png",
+      "car-3.png",
+    ],
   },
   {
     title: "Virtual Banking System",
@@ -76,6 +98,18 @@ const Projects = [
       "WebFlux",
       "Hibernate",
       "MySQL",
+    ],
+    images: [
+      "VBS-1.png",
+      "VBS-2.png",
+      "VBS-3.png",
+      "VBS-4.png",
+      "VBS-5.png",
+      "VBS-6.png",
+      "VBS-7.png",
+      "VBS-8.png",
+      "VBS-9.png",
+      "VBS-10.png",
     ],
   },
   {
