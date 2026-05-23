@@ -12,78 +12,56 @@ export default function CodeWindow() {
         <span className="text-body">~/portfolio/about.ts</span>
       </div>
 
-      <div className="text-sm p-6 space-y-2 overflow-x-auto text-left">
-        <div className="flex gap-2">
-          <span className="text-code-pink">const</span>
-          <span className="text-code-purple">developer</span>
-          <span className="text-code-pink" aria-hidden="true">
-            =
-          </span>
-          <span className="text-heading" aria-hidden="true">
-            {"{"}
-          </span>
+      <div className="text-sm p-6 space-y-2 overflow-x-auto text-left leading-relaxed">
+        <div>
+          <span className="text-code-pink">const</span>{" "}
+          <span className="text-code-purple">developer</span>{" "}
+          <span className="text-code-pink" aria-hidden="true">=</span>{" "}
+          <span className="text-heading" aria-hidden="true">{"{"}</span>
         </div>
 
         <div className="pl-8 space-y-2">
-          <div className="flex gap-2">
-            <span className="text-code-purple">name:</span>
+          <div>
+            <span className="text-code-purple">name:</span>{" "}
             <span className="text-code-blue">"Nour Atef"</span>
-            <span className="text-code-pink" aria-hidden="true">
-              ,
-            </span>
+            <span className="text-code-pink" aria-hidden="true">,</span>
           </div>
 
-          <div className="flex gap-2">
-            <span className="text-code-purple">role:</span>
+          <div>
+            <span className="text-code-purple">role:</span>{" "}
             <span className="text-code-blue">"Full Stack Developer"</span>
-            <span className="text-code-pink" aria-hidden="true">
-              ,
-            </span>
+            <span className="text-code-pink" aria-hidden="true">,</span>
           </div>
 
-          <div className="flex gap-2">
-            <span className="text-code-purple">location:</span>
+          <div>
+            <span className="text-code-purple">location:</span>{" "}
             <span className="text-code-blue">"Alexandria, Egypt"</span>
-            <span className="text-code-pink" aria-hidden="true">
-              ,
-            </span>
+            <span className="text-code-pink" aria-hidden="true">,</span>
           </div>
 
-          <div className="flex gap-2 flex-wrap">
-            <span className="text-code-purple">skills:</span>
-            <span className="text-heading" aria-hidden="true">
-              [
-            </span>
+          <div className="leading-loose sm:leading-relaxed">
+            <span className="text-code-purple">skills:</span>{" "}
+            <span className="text-heading" aria-hidden="true">[</span>
             <span className="text-code-blue">"React"</span>
-            <span className="text-code-pink" aria-hidden="true">
-              ,{" "}
-            </span>
+            <span className="text-code-pink" aria-hidden="true">, </span>
             <span className="text-code-blue">"Next.js"</span>
-            <span className="text-code-pink" aria-hidden="true">
-              ,{" "}
-            </span>
+            <span className="text-code-pink" aria-hidden="true">, </span>
             <span className="text-code-blue">"Node.js"</span>
-            <span className="text-code-pink" aria-hidden="true">
-              ,{" "}
-            </span>
+            <span className="text-code-pink" aria-hidden="true">, </span>
             <span className="text-code-blue">"TypeScript"</span>
-            <span className="text-heading" aria-hidden="true">
-              ],
-            </span>
+            <span className="text-heading" aria-hidden="true">],</span>
           </div>
 
-          <div className="flex gap-2">
-            <span className="text-code-purple">passion:</span>
+          <div>
+            <span className="text-code-purple">passion:</span>{" "}
             <span className="text-code-blue">
               "Building amazing web experiences"
             </span>
-            <span className="text-code-pink" aria-hidden="true">
-              ,
-            </span>
+            <span className="text-code-pink" aria-hidden="true">,</span>
           </div>
 
-          <div className="flex gap-2">
-            <span className="text-code-purple">currentFocus:</span>
+          <div>
+            <span className="text-code-purple">currentFocus:</span>{" "}
             <span className="text-code-blue">
               "Creating beautiful, performant applications"
             </span>

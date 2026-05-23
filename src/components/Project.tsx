@@ -58,11 +58,11 @@ export default function Project({
       <ImageCarousel images={images} />
 
       <p className="text-start">{description}</p>
-      <div className="flex gap-2">
+      <div className="flex gap-2 flex-wrap">
         {tags.map((tag) => (
           <span
             key={tag}
-            className="bg-gray-400/10 text-code-blue font-mono text-xs py-1 border border-white/10 rounded-sm px-2"
+            className=" bg-gray-400/10 text-code-blue font-mono text-xs py-1 border border-white/10 rounded-sm px-2"
           >
             {tag}
           </span>

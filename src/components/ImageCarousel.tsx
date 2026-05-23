@@ -20,7 +20,7 @@ export default function ImageCarousel({ images }: CarouselProps) {
 
   return (
     // The 'group' class allows the buttons to appear only when hovering over the image
-    <div className="relative  h-96 mx-auto rounded-md overflow-hidden group bg-black/20 border border-divider">
+    <div className="relative  md:h-96 mx-auto rounded-md overflow-hidden group bg-black/20 border border-divider">
       <img
         src={images[currentIndex]}
         alt={`Screenshot ${currentIndex + 1}`}
