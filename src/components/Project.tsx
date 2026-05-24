@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
-import ProjectLinks from "../components/ProjectLinks";
 import { CiFolderOn } from "react-icons/ci";
+import ProjectLinks from "../components/ProjectLinks";
+import Card from "./Card";
 import ImageCarousel from "./ImageCarousel";
 
 type ProjectProps = {
@@ -20,33 +20,8 @@ export default function Project({
   tags,
   images,
 }: ProjectProps) {
-  // --- Intersection Observer for animation ---
-  const [isVisible, setIsVisible] = useState(false);
-  const domRef = useRef<HTMLLIElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        // When the element enters the screen -> set it to visible
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          // Stop observing once it appears
-          if (domRef.current) observer.unobserve(domRef.current);
-        }
-      });
-    });
-
-    if (domRef.current) observer.observe(domRef.current);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <li
-      ref={domRef}
-      className={`hover:border-accent-border border rounded-lg border-divider p-4 flex flex-col gap-4 transition-all duration-1000 ease-out transform ${
-        isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
-      }`}
-    >
+    <Card>
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <CiFolderOn className="text-accent" size={30} aria-hidden="true" />
@@ -68,6 +43,6 @@ export default function Project({
           </span>
         ))}
       </div>
-    </li>
+    </Card>
   );
 }

@@ -1,5 +1,6 @@
 import { FaFolder } from "react-icons/fa";
 import Project from "../components/Project";
+import SectionLayout from "../components/SectionLayout";
 
 const Projects = [
   {
@@ -132,40 +133,16 @@ const Projects = [
 
 export default function ProjectsSection() {
   return (
-    <section className=" bg-surface min-h-screen flex items-center justify-center p-2 sm:p-8 border-t border-divider">
-      <div className=" w-full max-w-6xl text-center lg:text-left flex flex-col gap-6">
-        <h2
-          aria-label="Projects"
-          className="px-8 pt-8 text-3xl flex-wrap flex items-center gap-3 min-[460px]:text-5xl text-heading font-heading font-bold mb-6"
-        >
-          <FaFolder aria-hidden="true" className=" text-accent mt-2" />
-          <span aria-hidden="true" className=" text-accent">
-            const
-          </span>
-          <span aria-hidden="true" className="text-code-blue">
-            projects
-          </span>
-          <span aria-hidden="true" className="text-body">
-            =
-          </span>
-          <span aria-hidden="true" className=" text-accent">
-            {"[...]"}
-          </span>
-        </h2>
-        <ul className="flex flex-col gap-6">
-          {Projects.map((project) => (
-            <Project
-              key={project.title}
-              title={project.title}
-              description={project.description}
-              githubLink={project.githubLink}
-              externalLink={project.externalLink}
-              tags={project.tags}
-              images={project.images}
-            />
-          ))}
-        </ul>
-      </div>
-    </section>
+    <SectionLayout
+      title="projects"
+      icon={<FaFolder className="text-accent mt-2" />}
+      lightBg={true}
+    >
+      <ul className="flex flex-col gap-6">
+        {Projects.map((project) => (
+          <Project key={project.title} {...project} />
+        ))}
+      </ul>
+    </SectionLayout>
   );
 }

@@ -1,4 +1,5 @@
 import UserLinks from "./components/UserLinks";
+import ExperienceSection from "./sections/ExperienceSection";
 import HeroSection from "./sections/HeroSection";
 import ProjectsSection from "./sections/ProjectsSection";
 
@@ -8,6 +9,7 @@ function App() {
       <UserLinks />
       <HeroSection />
       <ProjectsSection />
+      <ExperienceSection />
     </div>
   );
 }
