@@ -15,7 +15,7 @@ export default function SectionLayout({
   title2,
   icon,
   lightBg = false,
-  className
+  className,
 }: SectionLayoutProps) {
   return (
     <section
@@ -52,9 +52,7 @@ export default function SectionLayout({
               <span aria-hidden="true" className="text-code-blue">
                 {title2
                   ?.toLowerCase()
-                  .replace(/[^a-zA-Z0-9]+(.)/g, (match, chr) =>
-                    chr.toUpperCase(),
-                  )}
+                  .replace(/[^a-zA-Z0-9]+(.)/g, (_, chr) => chr.toUpperCase())}
                 ()
               </span>
             </>
