@@ -4,12 +4,16 @@ type CardProps = {
   children: ReactNode;
   slide?: "right" | "up";
   lightBg?: boolean;
+  highlight?: boolean;
+  className?: string;
 };
 
 export default function Card({
   children,
   slide = "right",
   lightBg = false,
+  highlight = true,
+  className,
 }: CardProps) {
   const [isVisible, setIsVisible] = useState(false);
   const domRef = useRef<HTMLLIElement>(null);
@@ -36,7 +40,7 @@ export default function Card({
   return (
     <li
       ref={domRef}
-      className={`hover:border-accent-border border rounded-lg border-divider p-4 flex flex-col gap-4 transform 
+      className={`${className} ${highlight && "hover:border-accent-border"} border rounded-lg border-divider p-4 flex flex-col gap-4 transform 
         ${!isVisible ? "opacity-0" : ""} 
         ${lightBg && "bg-surface"} 
         ${

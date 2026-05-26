@@ -1,4 +1,5 @@
 import UserLinks from "./components/UserLinks";
+import ContactSection from "./sections/ContactSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import HeroSection from "./sections/HeroSection";
 import ProjectsSection from "./sections/ProjectsSection";
@@ -12,6 +13,7 @@ function App() {
       <ProjectsSection />
       <ExperienceSection />
       <SkillsSection />
+      <ContactSection />
     </div>
   );
 }
